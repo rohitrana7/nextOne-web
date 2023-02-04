@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* FONTS*/
+@font-face {
+    font-family: MavenPro;
+    src: url('./assets/fonts/MavenPro-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: MavenPro;
+  }
+  
+  //Notification Service css
+  .default-snackbar {
+    background: #323232 !important;
+    color: white !important;
+  }
+  
+  .warning-snackbar {
+    background: rgb(240, 243, 63) !important;
+    color: black !important;
+  }
+  
+  .success-snackbar {
+    background: green !important;
+    color: white !important;
+  }
+  
+  .error-snackbar {
+    background: #dc3545 !important;
+    color: white !important;
+  }
+  
+  .info-snackbar {
+    background: rgb(13, 202, 240) !important;
+    color: black !important;
+  }
+  
+  .dialog-panelClass .mat-dialog-content,
+  .mat-dialog-container {
+    overflow-x: hidden;
+    padding: 0 !important;
+    background: none !important;
+  }
+  
+  .icon-cum-btn {
+    cursor: pointer;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

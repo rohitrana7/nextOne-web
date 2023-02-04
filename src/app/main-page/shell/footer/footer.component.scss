@@ -1,0 +1,76 @@
+@import '/src/app/styles-custom/main-page-global.scss';
+
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        transition: 1s;
+
+        .row {
+            transition: 1s;
+
+            .col-sm-3 {
+                transition: 1s;
+                width: 100% !important;
+
+                .row {
+                    transition: 1s;
+                    margin: 0% !important;
+                }
+            }
+        }
+    }
+}
+
+.container-fluid {
+    transition: 1s;
+    position: relative;
+    bottom: 0;
+    background-color: $nextone-color-white;
+    font-family: MavenPro;
+
+    .row {
+        transition: 1s;
+
+        .col-sm-3 {
+            transition: 1s;
+            text-align: end;
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+            .row {
+                transition: 1s;
+                padding: 5%;
+
+                .button {
+                    text-transform: capitalize;
+                    background-color: $nextone-color-white;
+                    color: $nextone-color-dark-gray;
+                    border: none;
+                    transition: .3s;
+                    font-size: medium;
+                }
+
+                .button:hover {
+                    color: $nextone-color-dark-gray;
+                    font-weight: bold;
+                    transition: .3s;
+                }
+            }
+        }
+
+        .col-sm-12 {
+            transition: 1s;
+
+            .title {
+                font-family: MavenPro;
+                letter-spacing: .5rem;
+                font-weight: bold;
+                color: $nextone-color-black;
+                text-transform: uppercase;
+                margin: 0;
+                text-align: center;
+                transition: 1s;
+                padding: 0% 2% 2% 2%;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/* NextOne Blue-Color Theme */
+// $nextone-color-black: #222831;
+$nextone-color-white: #ffffff;
+// $nextone-color-light-gray: #F6F5F5;
+$nextone-color-light-blue: #D3E0EA;
+$nextone-color-medium-blue: #1687A7;
+$nextone-color-dark-blue: #276678;
+
+/* NextOne Red-Color Theme */
+$nextone-color-black: #171717;
+$nextone-color-dark-gray: #444444;
+$nextone-color-light-gray: #EDEDED;
+$nextone-color-red: #DA0037;
+
+/* Shadow */
+$nextone-box-shadow-black: 0px 0px 3px $nextone-color-black;
+$nextone-box-shadow-dark-blue: 0px 0px 3px $nextone-color-dark-blue;
+$nextone-box-shadow-medium-blue: 0px 0px 3px $nextone-color-medium-blue;
+$nextone-box-shadow-light-blue: 0px 0px 3px $nextone-color-light-blue;
+$nextone-box-shadow-light-gray: 0px 0px 3px $nextone-color-light-gray;
+
+//border-layout shadow mb-5 bg-white rounded
+.box-layout {
+  margin: 40px 20px 0 20px;
+  border: 1px solid $nextone-color-black;
+  border-radius: 10px !important;
+}
+
+.btn-custom-black {
+  background: $nextone-color-black;
+  color: white;
+}
+
+.title-holder {
+  border-bottom: 1px solid $nextone-color-black;
+  margin: 0;
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.title-holder .sp-btwn {
+  justify-content: space-between;
+}
+
+.title-holder>mat-icon {
+  font-size: 2rem;
+}
+
+.heading {
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  font-size: 2rem !important;
+  // font-family: 'Courier New', Courier, monospace; //to be replaced with Couture later
+}
+
+.action-items {
+  border-top: 1px solid $nextone-color-black;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}

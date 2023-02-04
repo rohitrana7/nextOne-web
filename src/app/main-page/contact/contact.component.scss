@@ -1,0 +1,128 @@
+@import '../../styles-custom/main-page-global.scss';
+
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        width: 100% !important;
+        transition: 1s !important;
+
+        .row {
+            transition: 1s;
+
+            .col-sm-12 {
+                transition: 1s;
+
+                .form {
+                    transition: 1s;
+
+                    .row {
+                        transition: 1s;
+                        padding: 0%;
+
+                        .col-sm-6 {
+                            transition: 1s;
+
+                            input {
+                                transition: 1s;
+                                margin-bottom: 4%;
+                            }
+                        }
+
+                        .col-sm-12 {
+                            transition: 1s;
+
+                            textarea {
+                                transition: 1s;
+                                margin-bottom: 4%;
+                            }
+
+                            button {
+                                transition: .3s;
+                                margin-bottom: 4%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-fluid {
+    transition: 1s;
+    text-align: center;
+    padding: 4%;
+    width: 35%;
+    text-transform: capitalize;
+    font-family: MavenPro;
+    transition: 1s;
+
+    .row {
+        transition: 1s;
+        padding: 2%;
+
+        .col-sm-12 {
+            transition: 1s;
+
+            .form {
+                transition: 1s;
+
+                .row {
+                    transition: 1s;
+
+                    .col-sm-6 {
+                        transition: 1s;
+
+                        input {
+                            transition: 1s;
+                            background-color: $nextone-color-light-gray;
+                            width: 100%;
+                            text-transform: capitalize;
+                            padding: 4%;
+                            text-align: center;
+                            border-radius: 5px;
+                            font-size: medium;
+                            border: none;
+                        }
+                    }
+
+                    .col-sm-12 {
+                        transition: 1s;
+                        text-align: start;
+
+                        textarea {
+                            transition: 1s;
+                            background-color: $nextone-color-light-gray ;
+                            width: 100%;
+                            border: none;
+                            border-radius: 10px;
+                            text-transform: capitalize;
+                            font-size: medium;
+                            text-align: center;
+                        }
+
+                        button {
+                            border-radius: 5px;
+                            border: none;
+                            text-transform: capitalize;
+                            padding: 2%;
+                            font-size: medium;
+                            transition: .3s;
+                            width: 100%;
+                        }
+
+                        button:hover {
+                            background-color: $nextone-color-black;
+                            box-shadow: $nextone-box-shadow-black;
+                            color: $nextone-color-white;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+hr{
+    margin: 0;
+}
