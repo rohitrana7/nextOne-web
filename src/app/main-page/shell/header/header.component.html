@@ -1,0 +1,21 @@
+<div class="container-fluid" id="header">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1 class="title" routerLink="/main/home">
+                <img [src]="nextOneHeaderLogoPath" alt="NextOne Technologies" width="200">
+            </h1>
+        </div>
+        <div class="col-sm-6 two">
+            <button type="button" class="button" [ngClass]="{'active': navValue == nextone_menukey.home}"
+                (click)="loadMenu(nextone_menukey.home)" routerLink="/main/home">home</button>
+            <button type="button" class="button" [ngClass]="{'active': navValue == nextone_menukey.services}"
+                (click)="loadMenu(nextone_menukey.services)" routerLink="/main/services">services</button>
+            <button type="button" class="button" [ngClass]="{'active': navValue == nextone_menukey.careers}"
+                (click)="loadMenu(nextone_menukey.careers)" routerLink="/main/careers">careers</button>
+            <button type="button" class="button" [ngClass]="{'active': navValue == nextone_menukey.about}"
+                (click)="loadMenu(nextone_menukey.about)" routerLink="/main/about">about</button>
+            <button type="button" class="button" [ngClass]="{'active': navValue == nextone_menukey.contact}"
+                (click)="loadMenu(nextone_menukey.contact)" routerLink="/main/contact">contact</button>
+        </div>
+    </div>
+</div>
