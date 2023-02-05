@@ -1,0 +1,1 @@
+export const mobilePattern = '[0-9]{10}';

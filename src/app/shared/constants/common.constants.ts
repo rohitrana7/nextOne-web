@@ -2,7 +2,6 @@ export const HttpErrorStatusCodes = {} //Need not use, status code readily avail
 
 export const AppIds = {
     nextone_main: 1,
-    quotationPlus: 2,
 }
 
 export const nextone_menukey = {
@@ -12,3 +11,6 @@ export const nextone_menukey = {
     about: 4,
     contact: 5,
 }
+
+export const msgMinLength = 30;
+export const msgMaxLength = 300;

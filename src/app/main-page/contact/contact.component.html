@@ -1,36 +1,43 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <h1 class="h1">talk to us?</h1>
-            <form class="form" action="" method="post">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <input type="text" placeholder="first name" required>
+<div class="outer-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="h1">talk to us?</h1>
+                <form class="form" [formGroup]="contactForm" (ngSubmit)="onSend()">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="First Name*" formControlName="firstName">
+                            <span class="form-error" *ngIf="firstName?.invalid && firstName?.touched">First Name is required</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Last Name*" formControlName="lastName">
+                            <span class="form-error" *ngIf="lastName?.invalid && lastName?.touched">Last Name is required</span>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <input type="text" placeholder="last name" required>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="email" placeholder="Email*" formControlName="email">
+                            <span class="form-error" *ngIf="email?.invalid && email?.touched">Email is Invalid</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="tel" name="mobile" id="Mobile" placeholder="Mobile" formControlName="mobile">
+                            <span class="form-error" *ngIf="mobile?.invalid && mobile?.touched">Mobile is Invalid</span>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <input type="email" placeholder="email id" required>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message (Min. 30 characters)*" formControlName="message">
+                            </textarea>
+                            <span class="form-error" *ngIf="message?.invalid && message?.touched">Message is required</span>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <input type="tel" name="mobile" id="mobile" placeholder="mobile" required>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-block btn-primary" [disabled]="contactForm.invalid">Send</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="your message" required></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button type="submit">send</button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
-<hr>
